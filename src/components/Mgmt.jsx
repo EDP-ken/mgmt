@@ -44,7 +44,7 @@ export function Mgmt() {
               <div>備品番号: {mgmt.equipmentNum}</div>
               <div>名前: {mgmt.name}</div>
               <div>備品名: {mgmt.equipmentName}</div>
-              <div>
+              {/* <div>
                 <h2>写真:</h2>
                 {mgmt.photo ? (
                   <img
@@ -55,7 +55,7 @@ export function Mgmt() {
                 ) : (
                   <div>写真が見つかりません</div>
                 )}
-              </div>
+              </div> */}
               <div>使用用途: {mgmt.purpose}</div>
               <div>返却予定日: {mgmt.returnDate}</div>
               <div>メールアドレス: {mgmt.email}</div>

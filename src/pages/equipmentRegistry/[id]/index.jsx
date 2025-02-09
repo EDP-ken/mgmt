@@ -111,7 +111,7 @@ const MgmtID = ({ mgmt, _equipments = {} }) => {
         name: `${user.displayName}`,
         equipmentNum: mgmt.num,
         equipmentName: mgmt.equipmentName,
-        photo: mgmt.photo,
+        // photo: mgmt.photo,
         email: user.email,
       };
 
@@ -214,7 +214,7 @@ const MgmtID = ({ mgmt, _equipments = {} }) => {
             <h1>備品情報</h1>
             <div>備品番号: {mgmt.num}</div>
             <div>備品名: {mgmt.equipmentName}</div>
-            <div>
+            {/* <div>
               <h2>写真:</h2>
               {mgmt.photo ? (
                 <img
@@ -225,7 +225,7 @@ const MgmtID = ({ mgmt, _equipments = {} }) => {
               ) : (
                 <div>写真が見つかりません</div>
               )}
-            </div>
+            </div> */}
             <div>備品情報: {mgmt.equipmentDetails}</div>
             <div>登録した日付: {formatDate(mgmt.addedDate)}</div>
           </div>
@@ -301,7 +301,7 @@ const MgmtID = ({ mgmt, _equipments = {} }) => {
                       <div>備品番号: {borrowedItem.equipmentNum}</div>
                       <div>名前: {borrowedItem.name}</div>
                       <div>備品名: {borrowedItem.equipmentName}</div>
-                      <div>
+                      {/* <div>
                         <h2>写真:</h2>
                         {borrowedItem.photo ? (
                           <img
@@ -312,7 +312,7 @@ const MgmtID = ({ mgmt, _equipments = {} }) => {
                         ) : (
                           <div>写真が見つかりません</div>
                         )}
-                      </div>
+                      </div> */}
                       <div>用途: {borrowedItem.purpose}</div>
                       <div>返却予定日: {borrowedItem.returnDate}</div>
                       <div>メールアドレス: {borrowedItem.email}</div>

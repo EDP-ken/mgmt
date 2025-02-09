@@ -94,7 +94,7 @@ export function Equipment() {
                     <div>登録順: {index + 1}</div>
                     <div>備品番号: {mgmt.num}</div>
                     <div>備品名: {mgmt.equipmentName}</div>
-                    <div>
+                    {/* <div>
                       <h2>写真:</h2>
                       {mgmt.photo ? (
                         <img
@@ -105,7 +105,7 @@ export function Equipment() {
                       ) : (
                         <div>写真が見つかりません</div>
                       )}
-                    </div>
+                    </div> */}
                     <div>備品情報: {mgmt.equipmentDetails}</div>
                     <div>メールアドレス: {mgmt.email}</div>
                     <div>登録日: {formatDate(mgmt.addedDate)}</div>

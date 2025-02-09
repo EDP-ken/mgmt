@@ -138,7 +138,7 @@ export function Register() {
             </div>
             <button
               type="submit"
-              className="submit-button bg-blue-500 text-white py-1 px-2 rounded"
+              className="submit-button bg-gray-500 text-white py-1 px-2 rounded"
             >
               送信
             </button>

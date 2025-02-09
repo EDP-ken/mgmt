@@ -12,7 +12,7 @@ export function Mgmt() {
 
   const getEquipment = useCallback(async () => {
     const res = await fetch(
-      "https://login-8e441-default-rtdb.firebaseio.com/equipments.json"
+      "https://mgmt-a47d9-default-rtdb.firebaseio.com/equipments.json"
     );
     const json = await res.json();
     if (json && typeof json === "object") {

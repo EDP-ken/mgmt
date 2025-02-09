@@ -12,7 +12,7 @@ export function Equipment() {
 
   const getEquipment = useCallback(async () => {
     const res = await fetch(
-      "https://login-8e441-default-rtdb.firebaseio.com/equipmentRegistry.json"
+      "https://mgmt-a47d9-default-rtdb.firebaseio.com/equipmentRegistry.json"
     );
     const json = await res.json();
     const equipmentRegistryArray = Object.keys(json).map((key) => ({
@@ -43,7 +43,7 @@ export function Equipment() {
 
   const handleDelete = async (id) => {
     const res = await fetch(
-      "https://login-8e441-default-rtdb.firebaseio.com/equipments.json"
+      "https://mgmt-a47d9-default-rtdb.firebaseio.com/equipments.json"
     );
     const json = await res.json();
     if (json) {

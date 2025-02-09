@@ -56,7 +56,7 @@ export function Register() {
       }
 
       const newEquipmentNum = maxEquipmentNum + 1;
-      const qrDataUrl = `https://mgmt-vercel.vercel.app/equipmentRegistry/${newEquipmentNum}`;
+      const qrDataUrl = `https://mgmt-gilt.vercel.app/equipmentRegistry/${newEquipmentNum}`;
       const qrCode = await QRCode.toDataURL(qrDataUrl, {
         errorCorrectionLevel: "M",
         width: 200,

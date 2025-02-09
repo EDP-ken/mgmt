@@ -11,11 +11,11 @@ import { Header } from "@/components/Header";
 
 export const getServerSideProps = async (ctx) => {
   const { id } = ctx.query;
-  const USER_API_URL = `https://login-8e441-default-rtdb.firebaseio.com/equipmentRegistry/${id}.json`;
+  const USER_API_URL = `https://mgmt-a47d9-default-rtdb.firebaseio.com/equipmentRegistry/${id}.json`;
   const user = await fetch(USER_API_URL);
   const userData = await user.json();
 
-  const EQUIPMENTS_API_URL = `https://login-8e441-default-rtdb.firebaseio.com/equipments.json`;
+  const EQUIPMENTS_API_URL = `https://mgmt-a47d9-default-rtdb.firebaseio.com/equipments.json`;
   const user_e = await fetch(EQUIPMENTS_API_URL);
   const equipmentsData = await user_e.json();
 
